@@ -3,6 +3,11 @@
     "sourceRoot": "http://localhost:8080/serialize",
     "destinationRoot": "/serialize",
     "files": [
-        {"src": "JSON.lua", "dest": "json.lua"}
+        "!my JSON parser sucks, so I'm just linking to someone else's for now",
+        "!{\"src\": \"JSON.lua\", \"dest\": \"json.lua\"}",
+        {
+            "remote": "https://raw.githubusercontent.com/rxi/json.lua/refs/heads/master/json.lua",
+            "dest": "json.lua"
+        }
     ]
 }
