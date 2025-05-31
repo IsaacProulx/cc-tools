@@ -1,4 +1,4 @@
-local generatePrimes = require(".:/crypto/_atkins")
+local generatePrimes = require("/crypto/_atkins")
 
 local function generatePrime(min, max)
     local primes = generatePrimes(min, max)
@@ -6,7 +6,7 @@ local function generatePrime(min, max)
     return primes[math.random(#primes)]
 end
 
--- https://github.com/TheAlgorithms/Lua/tree/main/src/math
+-- https://github.com/TheAlgorithms/Lua/blob/main/src/math/greatest_common_divisor.lua
 -- Euclidean algorithm
 local function extended_gcd(
 	a, -- number

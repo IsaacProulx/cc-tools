@@ -1,5 +1,5 @@
 local JSON
-if(not fs.exists(".:/serialize/json.lua")) then
+if(not fs.exists("/serialize/json.lua")) then
     print("Could not find JSON module. Loading remotely...")
     
     local res, err = http.get("https://raw.githubusercontent.com/rxi/json.lua/refs/heads/master/json.lua")
@@ -9,18 +9,18 @@ if(not fs.exists(".:/serialize/json.lua")) then
     end
     local content = res.readAll()
     res.close()
-    fs.makeDir(".:/serialize")
-    local f = fs.open(".:/serialize/json.lua", "w")
+    fs.makeDir("/serialize")
+    local f = fs.open("/serialize/json.lua", "w")
     f.write(content)
     f.close()
     JSON = loadstring(content)()
 else
     -- require may not be defined yet
-    JSON = loadfile(".:/serialize/json.lua")()
+    JSON = loadfile("/serialize/json.lua")()
 end
 
-if(not fs.exists(".:/.clone")) then
-    local f = fs.open(".:/.clone", "w")
+if(not fs.exists("/.clone")) then
+    local f = fs.open("/.clone", "w")
     f.write('{"roots":["http://localhost:8080"]}')
     f.close()
 end
@@ -50,7 +50,7 @@ local function getFile(repo, root, fileInfo, fs)
 end
 
 local function checkRepo(clonercUrl)
-    local f = fs.open(".:/.clone", "r")
+    local f = fs.open("/.clone", "r")
     local userSettings = JSON.decode(f.readAll())
     f.close()
     local ok, config, res, err
