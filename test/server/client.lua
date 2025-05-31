@@ -22,6 +22,7 @@ local function main()
             s = s .. op .. "+"
         end
         s = s:sub(0,-2) .. "=" .. res.body.ans
+        print(s)
         return
     end
     if(res.status == 400) then
