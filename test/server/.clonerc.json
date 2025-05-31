@@ -3,6 +3,7 @@
     "sourceRoot": "http://localhost:8080/test/server",
     "destinationRoot": "/",
     "files": [
-        {"src": "server.lua"}
+        {"src": "server.lua"},
+        {"src": "client.lua"}
     ]
 }
