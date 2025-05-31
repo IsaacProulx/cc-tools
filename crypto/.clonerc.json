@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "sourceRoot": "http://localhost:8080/crypto",
+    "destinationRoot": "/crypto",
+    "files": [
+        {"src":"_atkins.lua"},
+        {"src":"RSA.lua"}
+    ]
+}

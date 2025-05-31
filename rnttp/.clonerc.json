@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0",
+    "sourceRoot": "http://localhost:8080/rnttp",
+    "destinationRoot": "/rnttp",
+    "files": [
+        {"src": "init.lua"},
+        {"src": "rnttp.lua"},
+        {"src": "dns.lua"}
+    ]
+}

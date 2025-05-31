@@ -1,0 +1,8 @@
+{
+    "version": "1.0.0",
+    "sourceRoot": "http://localhost:8080/serialize",
+    "destinationRoot": "/serialize",
+    "files": [
+        {"src": "JSON.lua", "dest": "json.lua"}
+    ]
+}
