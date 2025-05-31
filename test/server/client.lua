@@ -19,7 +19,7 @@ local function main()
     if(res.status == 200) then
         local s = ""
         for _,op in pairs(operands) do
-            s = s .. op .. "+"
+            s = s .. op .. operation
         end
         s = s:sub(0,-2) .. "=" .. res.body.ans
         print(s)
