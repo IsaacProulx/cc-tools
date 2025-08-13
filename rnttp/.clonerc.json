@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "sourceRoot": "http://localhost:8080/rnttp",
+    "sourceRoot": "https://raw.githubusercontent.com/IsaacProulx/cc-tools/refs/heads/main/rnttp",
     "destinationRoot": "/rnttp",
     "files": [
         {"src": "init.lua"},

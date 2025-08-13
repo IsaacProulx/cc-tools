@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "sourceRoot": "http://localhost:8080/test/server",
+    "sourceRoot": "https://raw.githubusercontent.com/IsaacProulx/cc-tools/refs/heads/main/test/server",
     "destinationRoot": "/",
     "files": [
         {"src": "server.lua"},

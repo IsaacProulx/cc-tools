@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "sourceRoot": "http://localhost:8080/crypto",
+    "sourceRoot": "https://raw.githubusercontent.com/IsaacProulx/cc-tools/refs/heads/main/crypto",
     "destinationRoot": "/crypto",
     "files": [
         {"src":"_atkins.lua"},

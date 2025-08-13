@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "sourceRoot": "http://localhost:8080/serialize",
+    "sourceRoot": "https://raw.githubusercontent.com/IsaacProulx/cc-tools/refs/heads/main/serialize",
     "destinationRoot": "/serialize",
     "files": [
         "!my JSON parser sucks, so I'm just linking to someone else's for now",
