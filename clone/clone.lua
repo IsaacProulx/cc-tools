@@ -21,7 +21,7 @@ end
 
 if(not fs.exists("/.clone")) then
     local f = fs.open("/.clone", "w")
-    f.write('{"roots":["http://localhost:8080"]}')
+    f.write('{"roots":["https://raw.githubusercontent.com/IsaacProulx/cc-tools/refs/heads/main","http://localhost:8000"]}')
     f.close()
 end
 
